@@ -342,3 +342,12 @@ fabric.properties
 # Compiled binaries
 app
 /bin/
+
+# Local test stand
+.env
+docker-compose.override.yaml
+
+# air hot-reload build output
+tmp/
+
+translations/

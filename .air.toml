@@ -1,0 +1,17 @@
+root = "."
+tmp_dir = "tmp"
+
+[build]
+  cmd = "go build -o ./tmp/app ./cmd/app"
+  bin = "./tmp/app"
+  full_bin = "./tmp/app"
+  include_ext = ["go", "json"]
+  exclude_dir = ["tmp", "assets", "db/migrations", ".git"]
+  delay = 300
+  stop_on_error = true
+
+[log]
+  time = false
+
+[misc]
+  clean_on_exit = true
